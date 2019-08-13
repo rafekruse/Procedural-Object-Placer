@@ -16,7 +16,16 @@ The tool was built to create levels for a game where the user follows a path thr
 ## Object Placer
 ![ezgif com-optimize](https://user-images.githubusercontent.com/43308388/62971601-3caff800-bde0-11e9-8339-fccfa6cabf9b.gif)
 
+The object placer relies upon the unity built in collision system as a means of placing the objects. The system follows the below steps for placement. 
+1. A random triangle on "terrain"/base mesh is selected 
+2. The spawned object is rotated to be flush and stand up on the terrain(to account for objects like trees needing to be standing up).
+3. Then relying on the Unity collider system, if any of the objects overlap they go through step 1 and 2 until no longer colliding.
 
+Objects are spawned in batches to allow all the spawn calls to occur together and for all the colliding to be run together. (This is opposed to the method used in reference 1, and is comparitively orders of magnitude faster.)
+
+
+## Line Generator
+![Line Generator](https://user-images.githubusercontent.com/43308388/62970058-99111880-bddc-11e9-97b6-15635b77ec4f.gif)
 
 
 
@@ -33,7 +42,6 @@ object placer
 
 
 
-![Line Generator](https://user-images.githubusercontent.com/43308388/62970058-99111880-bddc-11e9-97b6-15635b77ec4f.gif)
 
 
 
