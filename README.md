@@ -51,8 +51,10 @@ The line generator portion of the tool creates a random 2D or 3D line within a d
 
 1.http://pawelstupak.com/colliders-based-placement-tutorial/   
 This served as the initial inspiration for the project. Was the basis for using a collider based apporach to making a tool like this.
+
 2. https://assetstore.unity.com/packages/3d/environments/low-poly-pack-94605 
 Art used to demo the project.
+
 3.https://www.screentogif.com/
 Tool used to create the gifs within the readme.
 
