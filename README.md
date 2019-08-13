@@ -9,6 +9,7 @@ The tool was built to create levels for a game where the user follows a path thr
 
 
 
+## The Inspector
 
 
 
@@ -28,6 +29,7 @@ Objects are spawned in batches to allow all the spawn calls to occur together an
 ![Line Generator](https://user-images.githubusercontent.com/43308388/62970058-99111880-bddc-11e9-97b6-15635b77ec4f.gif)
 
 
+The line generator portion of the tool creates a random 2D or 3D line within a defined space. 
 
 OBJECT PLACER
 Optimized
