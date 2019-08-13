@@ -20,6 +20,12 @@ The tool was built to create levels for a game where the user follows a path thr
 
 
 
+OBJECT PLACER
+Optimized
+Tool have a great UI
+References
+Random line
+object placer
 
 
 
