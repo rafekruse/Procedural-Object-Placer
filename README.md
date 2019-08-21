@@ -19,10 +19,10 @@ The tool has a built-in custom inspector that allows for easier usage. Many sett
 ## Object Placer
 ![ezgif com-optimize](https://user-images.githubusercontent.com/43308388/62971601-3caff800-bde0-11e9-8339-fccfa6cabf9b.gif)
 
-The object placer relies upon the unity built-in collision system as a means of placing the objects. The system follows the below steps for placement. 
-1. A random triangle on "terrain"/base mesh is selected 
-2. The spawned object is rotated to be flush and stand up on the terrain(to account for objects like trees needing to be standing up).
-3. Then relying on the Unity collider system, if any of the objects overlap they go through step 1 and 2 until no longer colliding.
+The object placer relies upon the [Unity built-in collision system](https://docs.unity3d.com/Manual/CollidersOverview.html) as a means of placing the objects. The system follows the below steps for placement. 
+1. A random triangle on "terrain"/base [mesh](https://en.wikipedia.org/wiki/Polygon_mesh) is selected 
+2. The spawned object is rotated to be flush and stand up on the terrain(to account for objects like trees needing to be oriented up).
+3. Then relying on the Unity collider system, if any of the objects overlap they go through step 1 and 2 repeatedly until no longer colliding, or exceeding a maximum attempts.
 
 Objects are spawned in batches to allow all the spawn calls to occur together and for all the colliding to be run together. (This is opposed to the method used in reference 1, and is comparatively orders of magnitude faster.)
 
